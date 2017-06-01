@@ -1,4 +1,4 @@
-#** Lock-Free-Linked-List**
+# Lock-Free-Linked-List
 This repository contains code and information to use a multi-threaded lock free linked list in a big project.
 
 The repository contains the following files:

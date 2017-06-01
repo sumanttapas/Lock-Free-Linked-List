@@ -17,6 +17,7 @@ typedef struct node
 struct list
 {
 	node_lf * head;
+	node_lf * (*search)(int key, node_lf * head);
 	int (*insert)(int k,node_lf* head, void * value);
 	int (*delete_node)(int,node_lf *);
 	void (*print)(node_lf *);
@@ -49,6 +50,7 @@ return_sf SearchFrom(int k,node_lf * curr);
 void TryMark(node_lf * del_node);
 void HelpFlagged(node_lf * prev, node_lf * del_node);
 int insert(int k, node_lf * head, void * value);
+node_lf * Search(int key, node_lf * head);
 return_tf TryFlag(node_lf * prev, node_lf * target);
 int delete_node(int k, node_lf * head);
 void printlist(node_lf * head);

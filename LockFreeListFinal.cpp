@@ -206,7 +206,16 @@ return_tf TryFlag(node_lf * prev, node_lf * target)
 	}
 }
 
-int delete_node(int k, node_lf * head)
+node_lf * Search(int key, node_lf * head){
+	return_sf s = SearchFrom(key, head);
+	if(s.current->key == key){
+		return s.current;
+	}
+	else
+		0x0; // NULL
+}
+
+int delete_node(int k, node_lf * head) // returns 0 if delete is successful, -1 on failure.
 {
 	#ifdef debug
 	printf("Delete start\n");
@@ -229,7 +238,7 @@ int delete_node(int k, node_lf * head)
 	#ifdef debug
 	printf("Delete sucess %d\n",k);
 	#endif
-	return 1;
+	return 0;
 }
 
 node_lf * init_LF_list()
@@ -274,9 +283,12 @@ List list_init()
 	temp->head = init_LF_list();
 	temp->delete_node = delete_node;
 	temp->insert = insert;
+	temp->search = Search;
 	temp->print = printlist;
 	temp->destructor = destroy;
 	return temp;
 }
+
+
 
 

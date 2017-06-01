@@ -19,7 +19,7 @@ List mylist = list_init();
 ```
 *mylist* holds the head and tail elements of the list. From here onward, any mention of *head* pointer should be considered as *mylist->head*. 
 
-####Function prototypes:
+#### Function prototypes:
 
 1. *node_lf \* Search(int key, node\_lf \* head)*: *Search()* returns pointer to the element if it is found, else it returns NULL. The arguments to *Search()* function is a interger key associated with the element to be searched and a pointer to the head of the list. It should be noted and the head of the list can be accessed by *mylist->head* (as mentioned above).
 

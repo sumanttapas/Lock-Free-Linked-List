@@ -1,4 +1,4 @@
-# Lock-Free-Linked-List
+# Lock-Free-Linked-List #
 This repository contains code and information to use a multi-threaded lock free linked list in a big project.
 
 The repository contains the following files:
@@ -8,7 +8,7 @@ The repository contains the following files:
 3. testProgramIni.cpp: This is a initial test program to test the integrity of the code.
 4. Makefile: This is the initial GNU make file. Use this make file to test the testProgramIni.cpp program.
 
-###API call details:
+###API call details: ###
 
 Each element in the list holds a integer key and a void pointer to a value. The structure also contains additional variables which the user should not change. Additionally, the list is designed to hold unique key values sorted in non-decreasing order. So, duplicate keys would be simply ignored.
 
